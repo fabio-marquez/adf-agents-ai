@@ -1,0 +1,22 @@
+{
+    "name": "Dataset_Origem",
+    "properties": {
+      "linkedServiceName": {
+        "referenceName": "AzureBlobStorageLinkedService",
+        "type": "LinkedServiceReference"
+      },
+      "type": "DelimitedText",
+      "typeProperties": {
+        "location": {
+          "type": "AzureBlobStorageLocation",
+          "folderPath": "input/",
+          "fileName": "dados_entrada.csv"
+        },
+        "columnDelimiter": ",",
+        "escapeChar": "\\",
+        "quoteChar": "\"",
+        "firstRowAsHeader": true
+      }
+    }
+  }
+  

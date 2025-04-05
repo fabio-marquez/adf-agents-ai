@@ -1,0 +1,41 @@
+{
+    "name": "Pipeline_CopiaSimples",
+    "properties": {
+      "activities": [
+        {
+          "name": "CopiarDados",
+          "type": "Copy",
+          "inputs": [
+            {
+              "referenceName": "Dataset_Origem",
+              "type": "DatasetReference"
+            }
+          ],
+          "outputs": [
+            {
+              "referenceName": "Dataset_Destino",
+              "type": "DatasetReference"
+            }
+          ],
+          "typeProperties": {
+            "source": {
+              "type": "DelimitedTextSource"
+            },
+            "sink": {
+              "type": "DelimitedTextSink"
+            }
+          }
+        }
+      ],
+      "parameters": {
+        "DataExecucao": {
+          "type": "string",
+          "defaultValue": "2024-01-01"
+        }
+      },
+      "annotations": [
+        "pipeline de teste simples"
+      ]
+    }
+  }
+  

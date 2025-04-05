@@ -1,0 +1,22 @@
+{
+    "name": "Dataset_Destino",
+    "properties": {
+      "linkedServiceName": {
+        "referenceName": "AzureBlobStorageLinkedService",
+        "type": "LinkedServiceReference"
+      },
+      "type": "DelimitedText",
+      "typeProperties": {
+        "location": {
+          "type": "AzureBlobStorageLocation",
+          "folderPath": "output/",
+          "fileName": "dados_saida.csv"
+        },
+        "columnDelimiter": ",",
+        "escapeChar": "\\",
+        "quoteChar": "\"",
+        "firstRowAsHeader": true
+      }
+    }
+  }
+  
